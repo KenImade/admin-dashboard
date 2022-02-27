@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+header {
+    background-color: yellow;
+    grid-column: 2 / 3;
+}
+
+.main-content {
+    background-color: blue;
+    grid-column: 2 / auto;
+}
+
+.sidebar {
+    background-color: red;
+    grid-row: 1 / auto;
+}
