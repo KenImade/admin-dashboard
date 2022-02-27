@@ -22,4 +22,10 @@ header {
 .sidebar {
     background-color: red;
     grid-row: 1 / auto;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 32px;
 }
