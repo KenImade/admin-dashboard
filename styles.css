@@ -16,7 +16,6 @@
 header {
     background-color: yellow;
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
 }
 
 .main-content {
@@ -38,7 +37,9 @@ header {
     margin-left: 10px;
 }
 
-.sidebar img {
+.sidebar img, 
+.search-bar img,
+.notification-img {
     width: 24px;
 }
 
@@ -51,6 +52,7 @@ header {
     grid-template-columns: 24px auto;
     gap: 20px; */
 }
+
 
 
 
