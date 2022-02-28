@@ -47,6 +47,10 @@ header {
     margin-left: 10px;
 }
 
+.sidebar a:hover {
+    color: #16a34a;
+}
+
 .sidebar img {
     width: 24px;
 }
