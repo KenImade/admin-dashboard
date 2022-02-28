@@ -51,18 +51,24 @@ header {
     width: 24px;
 }
 
+.sidebar-link {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .logo {
     width: 20px;
 }
 
-.header-top,
+/* .header-top, */
 .header-bottom {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.search-bar,
 .profile-links {
     display: flex;
     flex-direction: row;
@@ -75,6 +81,32 @@ header {
 }
 
 .img-box {
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    border-radius: 20px;
+    background-color: #d1d5db;
+    font-size: 16px;
+    width: 80%;
+    height: 60%;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 20px;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
