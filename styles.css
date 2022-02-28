@@ -69,11 +69,6 @@ header {
     gap: 40px;
 }
 
-.profile-links {
-    display: flex;
-    flex-direction: row;
-}
-
 .search-icon,
 .notification-img{
     width: 100%;
@@ -96,7 +91,8 @@ header {
     height: 60%;
 }
 
-.search-box {
+.search-box, 
+.profile-links {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -109,4 +105,18 @@ header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+}
+
+.profile-links p {
+    color: black;
+    font-size: 24px;
+}
+
+.profile-links {
+    gap: 15px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 40px;
 }
