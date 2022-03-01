@@ -19,6 +19,7 @@ header {
     grid-row: 1/1;
     display: flex;
     flex-direction: column;
+    padding-left: 2rem;
 }
 
 .main-content {
@@ -67,10 +68,10 @@ header {
 }
 
 /* .header-top, */
-.header-bottom {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
 
 .search-icon,
@@ -102,13 +103,7 @@ header {
     gap: 5px;
     align-items: center;
     justify-items: center;
-    padding-left: 20px;
-}
-
-.header-top {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: center;
+    /* padding-left: 20px; */
 }
 
 .profile-links p {
@@ -123,4 +118,28 @@ header {
 .profile-img {
     border-radius: 50%;
     width: 40px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    height: 80px;
+}
+
+.profile-img-lg {
+    border-radius: 50%;
+    width: 50%;
+}
+
+/* .profile-img-box {
+    height: 60px;
+    width: 60px;
+} */
+
+.welcome-msg {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    align-items: center;
 }
