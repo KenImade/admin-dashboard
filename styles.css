@@ -1,8 +1,15 @@
 * {
     font-family: 'Mukta', sans-serif;
-    font-size: 30px;
     color: #ECC488;
     margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 30px
 }
 
 .container {
@@ -10,7 +17,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4fr;
-    grid-template-rows: minmax(30%, 1fr) minmax(70%, 5fr);
+    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -19,7 +26,8 @@ header {
     grid-row: 1/1;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding-left: 2rem;
+    padding: 30px;
+    gap: 25px;
 }
 
 .sidebar {
@@ -177,6 +185,32 @@ header {
 /* .main-content */
 .main-content {
     background-color: #90E0EF;
-    grid-column: 2 / auto;
+    grid-column: 2 / 3;
     grid-row: 2/ auto;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 15px;
+    padding: 25px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.left-content .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card-text {
+    
 }
