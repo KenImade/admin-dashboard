@@ -214,6 +214,7 @@ h4 {
     border-left: 10px solid #03045E;
     justify-content: space-around;
     border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .actions {
