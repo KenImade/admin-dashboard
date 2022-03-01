@@ -1,7 +1,7 @@
 * {
     font-family: 'Mukta', sans-serif;
     font-size: 30px;
-    color: white;
+    color: #ECC488;
     margin: 0;
 }
 
@@ -14,7 +14,7 @@
 }
 
 header {
-    background-color: yellow;
+    background-color: #00B4D8;
     grid-column: 2 / 3;
     grid-row: 1/1;
     display: grid;
@@ -22,14 +22,8 @@ header {
     padding-left: 2rem;
 }
 
-.main-content {
-    background-color: blue;
-    grid-column: 2 / auto;
-    grid-row: 2/ auto;
-}
-
 .sidebar {
-    background-color: #5DADE2;
+    background-color: #03045E;
     grid-row: 1 / 3;
     padding-left: 20px;
 }
@@ -107,7 +101,7 @@ header {
 }
 
 .profile-links p {
-    color: black;
+    color: #ECC488;
     font-size: 24px;
 }
 
@@ -165,17 +159,24 @@ header {
 }
 
 .action-btn {
-    appearance: button;
     background-color: #405cf5;
-    border-radius: 2rem;
+    color: black;
+    border-radius: 8%;
     height: 44px;
     font-size: 16px;
     width: 80%;
     outline: none;
-    box-sizing: border-box;
     cursor: pointer;
 }
 
 .action-btn:hover {
-    background-color: #16a34a;
+    background-color: #ECC488;
+}
+
+
+/* .main-content */
+.main-content {
+    background-color: #90E0EF;
+    grid-column: 2 / auto;
+    grid-row: 2/ auto;
 }
