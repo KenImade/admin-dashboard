@@ -243,8 +243,31 @@ h4 {
     box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+.trending .cards {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .trend-card img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.trend-card {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-card .user-info p {
+    padding: 0;
+    margin: 0;
 }
