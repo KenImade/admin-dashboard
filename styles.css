@@ -10,15 +10,15 @@
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4fr;
-    grid-template-rows: minmax(20%, 1fr) minmax(80%, 5fr);
+    grid-template-rows: minmax(30%, 1fr) minmax(70%, 5fr);
 }
 
 header {
     background-color: yellow;
     grid-column: 2 / 3;
     grid-row: 1/1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     padding-left: 2rem;
 }
 
@@ -118,28 +118,42 @@ header {
 .profile-img {
     border-radius: 50%;
     width: 40px;
+    height: 40px;
 }
 
 .header-bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 40px;
-    height: 80px;
 }
 
 .profile-img-lg {
     border-radius: 50%;
-    width: 50%;
+    width: 80px;
+    height: 80px;
 }
 
-/* .profile-img-box {
-    height: 60px;
-    width: 60px;
-} */
+.msg,
+.profile-img-box {
+    place-self: center;
+}
 
 .welcome-msg {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-items: center;
     align-items: center;
+}
+
+.msg p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.msg p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
 }
